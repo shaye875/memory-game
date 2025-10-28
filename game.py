@@ -70,7 +70,7 @@ def print_matrix(state):
     return str
 
 def print_status(state):
-    print(f"now you ahve more {state["max_turns"]-state["sum_cards_lost"]} \n you hit at {len(state["sum_cards_won"])}\n you lost{state["sum_cards_lost"]}")
+    print(f"now you ahve more {state["max_turns"]-state["sum_cards_lost"]} \n you hit at {state["sum_cards_won"]}\n you lost{state["sum_cards_lost"]}")
 
 def print_end(state):
     print(f"now the summary is: {state["name"]} you card do you win{state["sum_cards_won"]}\n sum cards do you lost {state["sum_cards_lost"]} \n the map is {print_board(state["board"])}\n by by")
